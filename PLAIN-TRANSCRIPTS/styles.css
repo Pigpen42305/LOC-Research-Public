@@ -1,0 +1,42 @@
+
+
+/* For full site styles */
+body {
+    background-color: #959595;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: black;
+}
+code {
+    color: inherit;
+    background-color: inherit;
+}
+
+/* The following classes are primarily for the transcripts */
+.speaker       { font-weight: bold;} /* For the speaker headings                   */
+.note          { opacity: 0.7;     } /* For notes in the transcript                */
+.interviewer   { color:  #960018; } /* For the main interviewer                   */
+.interviewer-2 { color:  #A91101; } /* For other interviewers                     */
+.interviewer-3 { color:  #DC143C; } /* For other interviewers                     */
+.interviewee   { color:  #006400; } /* For the first/main interviewee             */
+.interviewee-2 { color:  #228B22; } /* For other interviewees                     */
+.interviewee-3 { color:  #355E3B; } /* For other interviewees                     */
+.interviewee-4 { color:  #4B5320; } /* For other interviewees                     */
+.interviewee-5 { color:  #00563B; } /* For other interviewees                     */
+.interviewee-6 { color:  #01796F; } /* For other interviewees                     */
+.interviewees  { color:  #00A000; } /* For multiple interviewees at the same time */
+.OTHER         { color:  #404040; } /* For anyone else                            */
+
+
+/* Nice formatting for summaries */
+summary h1 { display: inline; }
+summary h2 { display: inline; }
+summary h3 { display: inline; }
+summary h4 { display: inline; }
+summary h5 { display: inline; }
+summary h6 { display: inline; }
+
+/* other classes: */
+
+/* index.html */
+.paragraphs { color: inherit; }
