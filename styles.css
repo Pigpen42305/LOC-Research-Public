@@ -8,8 +8,8 @@ body {
     color: black;
 }
 code {
-    color: inherit;
-    background-color: inherit;
+    color: inherit !important;
+    background-color: inherit !important;
 }
 
 /* The following classes are primarily for the transcripts */

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+      const url = 'https://tile.loc.gov/storage-services/service/afc/afc2010039/afc2010039_crhp0001_Carter_transcript/afc2010039_crhp0001_Carter_transcript.xml'; // Replace with your desired URL
+      fetch(url)
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('sourceCode').textContent = data;
+      })
+      .catch(error => console.error('Error fetching source:', error));
+    </script>
+    <title>Using ChatGPT for Textual Analysis</title>
+  </head>
+  <body>
+    <div hidden>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Go Back</a>
+        </li>
+        <li>
+          <a href="https://www.loc.gov/collections/civil-rights-history-project">Civil Rights History Project</a>
+        </li>
+        <li>
+          <a href="https://github.com/Pigpen42305/LoC-API-in-Python/tree/main/TRANSCRIPTS">You can get many of the transcripts here</a>
+        </li>
+        <li>
+          <a href="https://chatgpt.com/">ChatGPT from OpenAI</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <p>
+      The popular AI assistant ChatGPT was used for this project, alongside use of Python programming and the Library of Congress API.
+    </p>
+
+    <h1>The Library of Congress API</h1>
+    <ul>
+      <li>By using the LoC API, you can get XML transcripts for 104 out of the 144 oral history interviews.</li>
+      <li>Using the same API, you can also get PDF transcripts for an additional 39 of the interviews.</li>
+      <li>The LoC API can also provide access to 13 articles in the collection.</li>
+      <li>Only one oral history interview completely lacks a transcript.</li>
+    </ul>
+    <p>
+      However, the API doesn't return any plain text. The <code>fulltext</code>
+      <br>
+      XML is a formatting language, similar to HTML. You can request the XML for the interview of Robert L. Carter using:
+      <br>
+      <a href="https://tile.loc.gov/storage-services/service/afc/afc2010039/afc2010039_crhp0001_Carter_transcript/afc2010039_crhp0001_Carter_transcript.xml" target="_blank">
+        https://tile.loc.gov/storage-services/service/afc/afc2010039/afc2010039_crhp0001_Carter_transcript/afc2010039_crhp0001_Carter_transcript.xml
+      </a>
+    </p>
+    
+    <details>
+      <summary>
+        Example XML:
+      </summary>
+      <pre>
+        <code 
+         id="sourceCode"
+         class="syntax-highlight">
+        </code>
+      </pre>
+    </details>
+
+    </div>
+    <h1>Python and the LoC API</h1>
+    <p>
+      In order to get the plain text, I used an object-oriented approach with Python.
+      I created an <code class="syntax-highlight language-python">EntryData</code> class. Each instance of the <code class="syntax-highlight language-python">EntryData</code> class represents one
+      item in the collection. By running <code class="syntax-highlight language-python">EntryData.entry(1).get_transcript("")</code>
+    </p>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/vs.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/highlight.min.js"></script>
+    <script src="/highlight.js"></script>
+  </body>
+</html>
