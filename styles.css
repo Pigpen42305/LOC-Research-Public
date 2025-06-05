@@ -14,6 +14,7 @@ code {
 img {
     width: 90%;
     height: auto;
+    display: block;
 }
 
 /* The following classes are primarily for the transcripts */
