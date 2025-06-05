@@ -11,9 +11,6 @@ code {
     color: inherit !important;
     background-color: inherit !important;
 }
-img {
-    vertical-align: text-bottom;
-}
 
 /* The following classes are primarily for the transcripts */
 .speaker       { font-weight: bold;} /* For the speaker headings                   */
