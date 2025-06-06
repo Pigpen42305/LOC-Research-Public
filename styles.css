@@ -220,6 +220,41 @@ img {
     display: block;
 }
 
+/* Improve the appearance of code blocks */
+pre code {
+    background-color: #f4f4f4;
+    border-left: 4px solid #004080;
+    padding: 1rem;
+    display: block;
+    overflow-x: auto;
+    font-family: Consolas, Monaco, monospace;
+    border-radius: 4px;
+}
+
+/* Add some margin to h1 and h2 elements */
+h1, h2 {
+    margin-top: 2rem;
+    color: #004080;
+}
+
+/* Make anchor links stand out in content */
+a:not(nav a) {
+    color: #004080;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+a:not(nav a):hover {
+    color: #002850;
+    text-decoration: none;
+}
+
+/* Optional: Style for article and section */
+article, section {
+    margin-bottom: 2rem;
+}
+
+
 /* The following classes are primarily for the transcripts */
 .speaker       { font-weight: bold;} /* For the speaker headings                   */
 .note          { opacity: 0.7;     } /* For notes in the transcript                */
@@ -234,6 +269,7 @@ img {
 .interviewee-6 { color:  #01796F; } /* For other interviewees                     */
 .interviewees  { color:  #00A000; } /* For multiple interviewees at the same time */
 .OTHER         { color:  #404040; } /* For anyone else                            */
+
 
 
 /* Nice formatting for summaries /
