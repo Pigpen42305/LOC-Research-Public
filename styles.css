@@ -1,3 +1,4 @@
+/* ===== Base Layout & Typography ===== */
 /* General Page Styling */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -8,6 +9,7 @@ body {
     color: #333;
 }
 
+/* ===== Navigation Bar ===== */
 /* Navigation Bar */
 nav {
     background-color: #004080;
@@ -34,6 +36,7 @@ nav a:hover {
     color: white;
 }
 
+/* ===== Content Container ===== */
 /* Container for main page content */
 body div.pad, body div.pad p.pad {
     margin: 20px auto;
@@ -44,6 +47,7 @@ body div.pad, body div.pad p.pad {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
 }
 
+/* ===== Expandable Sections ===== */
 /* Expandable Transcript Sections */
 details {
     margin-bottom: 1.5rem;
@@ -68,16 +72,8 @@ summary {
 }
 
 /* Headings inside summary should not break layout */
-summary h1,
-summary h2,
-summary h3,
-summary h4,
-summary h5,
-summary h6 {
-    display: inline !important;
-    margin: 0;
-}
 
+/* ===== Transcript List ===== */
 /* Transcript List Styling */
 details ul {
     list-style-type: none;
@@ -104,6 +100,7 @@ details li a:hover {
     text-decoration: underline;
 }
 
+/* ===== Responsive Layout ===== */
 /* Responsive Layout */
 @media (max-width: 600px) {
     nav {
@@ -116,6 +113,7 @@ details li a:hover {
     }
 }
 
+/* ===== Code Blocks & Preformatted Text ===== */
 pre {
   white-space: pre;
   overflow-x: auto;
@@ -126,13 +124,6 @@ code {
     color: inherit !important;
     background-color: inherit !important;
 }
-img {
-    max-width: 90%;
-    height: auto;
-    max-height: 500px;
-    display: block;
-}
-
 /* Improve the appearance of code blocks */
 pre code {
     background-color: #f4f4f4;
@@ -142,6 +133,25 @@ pre code {
     overflow-x: auto;
     font-family: Consolas, Monaco, monospace;
     border-radius: 4px;
+}
+
+/* ===== Media Elements ===== */
+img {
+    max-width: 90%;
+    height: auto;
+    max-height: 500px;
+    display: block;
+}
+
+/* ===== Headings & Links ===== */
+summary h1,
+summary h2,
+summary h3,
+summary h4,
+summary h5,
+summary h6 {
+    display: inline !important;
+    margin: 0;
 }
 
 /* Add some margin to h1 and h2 elements */
@@ -162,12 +172,13 @@ a:not(nav a):hover {
     text-decoration: none;
 }
 
+/* ===== Document Structure Tags ===== */
 /* Optional: Style for article and section */
 article, section {
     margin-bottom: 2rem;
 }
 
-
+/* ===== Transcript-Specific Classes ===== */
 /* The following classes are primarily for the transcripts */
 .speaker       { font-weight: bold;} /* For the speaker headings                   */
 .note          { opacity: 0.7;     } /* For notes in the transcript                */
@@ -182,21 +193,3 @@ article, section {
 .interviewee-6 { color:  #01796F; } /* For other interviewees                     */
 .interviewees  { color:  #00A000; } /* For multiple interviewees at the same time */
 .OTHER         { color:  #404040; } /* For anyone else                            */
-
-
-
-/* Nice formatting for summaries /
-summary h1 { display: inline !important; }
-summary h2 { display: inline !important; }
-summary h3 { display: inline !important; }
-summary h4 { display: inline !important; }
-summary h5 { display: inline !important; }
-summary h6 { display: inline !important; }
-
-/* other classes: */
-
-
-/* index.html */
-/*
-.paragraphs { color: inherit; }
-*/
