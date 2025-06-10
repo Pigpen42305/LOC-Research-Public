@@ -142,6 +142,19 @@ img {
     max-height: 500px;
     display: block;
 }
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+}
+
+.image-row img {
+    height: auto;
+    max-height: 300px; /* Set a max height */
+    width: auto;
+    max-width: 100%;
+}
 
 /* ===== Headings & Links ===== */
 summary h1,
